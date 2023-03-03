@@ -9,7 +9,7 @@
     --footer-text-color: #e7e9fc;
     --nav-hover-color: #404bbf;
     --customers-color:#8e8f99;
-}
+}   
 
 ul,
 p,
@@ -161,6 +161,8 @@ img {
     color: var(--nav-hover-color);
 }
 
+
+
  /* Addres */
 
 .address {
@@ -226,9 +228,10 @@ img {
     line-height: 1.5;
 }
 
-/*.order-btn:hover,*/
+
+.order-btn:hover,
 .order-btn:focus {
-    background-color: var(--nav-hover-caolor);
+    background-color: var(--nav-hover-color);
 }
 
 /* skills */
@@ -393,7 +396,7 @@ img {
     padding-bottom: 100px;
 }
 
-.footer-content {
+.footer-cont {
     display: flex;
 }
 .footer-muter {
@@ -404,8 +407,7 @@ img {
 
     
 .ft-soc-media {
-    display: flex;
-    justify-content: center;
+    
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -442,9 +444,9 @@ img {
     height: 24px;
     width: 24px;
 }
-.ftr-social-link:hover,
-.ftr-social-link:focus {
-  background-color: #9bd031;
+.ft-soc-link:hover,
+.ft-soc-link:focus {
+  background-color: var(--logo-blue-color);
 }  
 
 /* portfolio */
@@ -495,6 +497,11 @@ img {
 .services-items {
     border: 1px solid var(--footer-text-color);
     flex-basis: calc((100% - 48px) / 3);
+}
+.services-items:hover,
+.services-items:focus {
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);;
 }
 
 .services-text {
