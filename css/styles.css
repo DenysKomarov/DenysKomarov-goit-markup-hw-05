@@ -111,7 +111,7 @@ img {
     border-bottom: 1px solid var(--footer-text-color);
 }
 
-/* site nav */
+/* Site nav */
 
 .logo {
     color: var(--logo-blue-color);
@@ -161,6 +161,23 @@ img {
     color: var(--nav-hover-color);
 }
 
+.current-link {
+    color: var(--nav-hover-color);
+}
+.current {
+    position: relative;
+}
+
+ .current::after {
+    position: absolute;
+    content: '';
+    bottom: -1px;
+    display: block;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: var(--nav-hover-color);
+}        
 
 
  /* Addres */
@@ -445,13 +462,13 @@ img {
   background-color: var(--logo-blue-color);
 }  
 
-/* portfolio */
+/* Portfolio */
 
 .portfolio {
     padding-top: 96px;
 }
 
-/* filter */
+/* Filter */
 
 .filter-btn {
     padding: 12px 24px;
@@ -483,6 +500,8 @@ img {
     gap: 24px;
 }
 
+/*Services*/
+
 .services {
     display: flex;
     flex-wrap: wrap;
@@ -504,4 +523,20 @@ img {
     padding: 32px 0 32px 16px;
 }
 
-
+.services-image {
+    position: relative;
+    overflow: hidden;
+}
+.services-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--logo-blue-color);
+    transform: translateY(100%);
+    transition: transform 250ms;
+}
+.services:hover .services-overlay {
+    transform: translateY(0);
+}
